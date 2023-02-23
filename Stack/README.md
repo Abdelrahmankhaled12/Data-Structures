@@ -3,9 +3,9 @@
 <hr>
 
 <ul>
-    <li> The Stack Data Structure IS A Sequential Collectio Of Elements That Follows The Principle Of Last In First Out (LIFO) </li>
-    <li> The Last Element Inserted Into The Stack Is First Element To Be Removed </li>
-    <li> A Stack Of Plates. The Last Plate Placed On Top Of The Stack Is Also The First Plate Removed From The Stack </li>
+    <li> The stack data structure iS a sequential collection of elements that follows the principle of last in first out (LIFO) </li>
+    <li> The last element inserted into the stack is first element to be removed </li>
+    <li> A stack of plates. The last plate placed on top of the stack is also the first plate removed from the stack </li>
     <li> Stack Is An Abstract Data Type. It Is DEfined By Its Behavior Rather Than Being a Mathematical Mode </li>
     <li>
      The Stack Data Structure Supports Two Main Operation 
@@ -37,12 +37,14 @@
 
 
 <ul>
-    <li> Push(element) -> Add AN Element To The Top Of The Stack </li>
-    <li> Pop() -> REmove The Top Most Element From The Stack</li>
-    <li> Peek() -> Get The Value Of The Top Element Without Removing It</li>
-    <li> isEmpty() -> Check If The Stack Is Empty</li>
-    <li> Size() -> Get The Number Of ELements Is The Stack</li>
-    <li> Print() -> Visualize The Elements In The Stack</li>
+    <li> Push(element) -> Add aN element to the top of the stack </li>
+    <br>
+    <li> Pop() -> Remove the top most element from the stack</li>
+    <br>
+    <li> Peek() -> Get the value of the top element without removing it</li>
+    <li> isEmpty() -> Check if the stack is empty</li>
+    <li> Size() -> Get the number of elements is the stack</li>
+    <li> Print() -> Visualize the elements in the stack</li>
 </ul>
 
 
