@@ -16,7 +16,10 @@ class Stack {
     }
     // Return Last item (Not Remove)
     peek() {
-        return  this.items[this.items.length - 1];
+        if(!this.isEmpty()) {
+            return  this.items[this.items.length - 1];
+        }
+        return null
     }
     // Size Stack
     size() {
@@ -24,7 +27,7 @@ class Stack {
     }
     // Print All Values In Stack
     print() {
-        return this.items.toString();
+        console.log(this.items.toString());
     }
 }
 
@@ -43,7 +46,7 @@ stackVar.pop()  // 1 , 2
 stackVar.push(4);  // 1 , 2 , 4 
 stackVar.push(5);  // 1 , 2 , 4 , 5
 
-console.log(stackVar.print());  // 1 , 2 , 4 , 5
+stackVar.print();  // 1 , 2 , 4 , 5
 console.log(stackVar.isEmpty()) // False
 console.log(stackVar.peek()); // 5
 console.log(stackVar.size()); // 4
