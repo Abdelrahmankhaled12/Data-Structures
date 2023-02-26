@@ -50,3 +50,7 @@ stackVar.print();  // 1 , 2 , 4 , 5
 console.log(stackVar.isEmpty()) // False
 console.log(stackVar.peek()); // 5
 console.log(stackVar.size()); // 4
+
+
+
+

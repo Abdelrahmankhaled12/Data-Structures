@@ -17,7 +17,6 @@ class Queue {
             return item;
         }
         return "Queue is Empty";
-
     }
     // Check Queue is Empty or Not
     isEmpty() {
