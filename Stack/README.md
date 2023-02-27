@@ -41,4 +41,14 @@
 </ul>
 
 
+### push 
+
+```text
+    push(item) {
+        this.items.push(item);
+    }
+```
+
+
+
 
