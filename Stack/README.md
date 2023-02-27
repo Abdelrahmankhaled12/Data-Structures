@@ -93,14 +93,12 @@ Considered as a linear data structure, or more abstractly a sequential collectio
     }
 ```
 
-## Stack Animation
 
-[Stack](https://yongdanielliang.github.io/animation/web/Stack.html);
+*Stack Animation [Stack](https://yongdanielliang.github.io/animation/web/Stack.html)*
+
 
 ## References
 
-<ul>
-    <li>[Wikipedia](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) </li>
-    <li>[YouTube](https://youtube.com/playlist?list=PLC3y8-rFHvwg6nsAOfC5Is18KB2DrVOJy)</li>
-    <li>[GeeksForGeeks](https://www.geeksforgeeks.org/implementation-stack-javascript/)</li>
-</ul>
+-   [Wikipedia](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+-   [YouTube](https://youtube.com/playlist?list=PLC3y8-rFHvwg6nsAOfC5Is18KB2DrVOJy)
+-   [GeeksForGeeks](https://www.geeksforgeeks.org/implementation-stack-javascript/)
