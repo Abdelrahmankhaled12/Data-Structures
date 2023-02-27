@@ -266,7 +266,7 @@ In computer science, a linked list is a linear collection of data elements whose
 
 ## Time Complexities between the Array and Linked list
 
-<img src="https://slideplayer.com/slide/1607255/5/images/20/Time+Complexity%3A+Singly-linked+lists+vs.+1D-arrays.jpg">
+<img src="./images/Time+Complexity_+Singly-linked+lists+vs.+1D-arrays.jpg">
 
 ## References
 
