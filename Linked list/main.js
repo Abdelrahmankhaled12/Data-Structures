@@ -9,6 +9,7 @@ class Node {
 class Linkedlist {
     constructor() {
         this.head = null;
+        this.tail = 0;
         this.size = 0;
     }
 
@@ -31,7 +32,7 @@ class Linkedlist {
         }
     }
 
-    // Remove Value
+    // Remove Value by index
     removeFrom(index) {
         if (index < 0 || index > this.size) {
             return null;
@@ -52,6 +53,7 @@ class Linkedlist {
         return removeNode;
     }
 
+    // Remove Value by value
     removeValue(value) {
         if (this.isEmpty()) {
             return null;
@@ -73,9 +75,9 @@ class Linkedlist {
         }
         this.size--;
         return removeNode;
-
     }
 
+    // Search Value
     searchValue(value) {
         if (this.isEmpty()) {
             return -1;
@@ -94,13 +96,29 @@ class Linkedlist {
         }
     }
 
+    // Reverse nodes
+    reverse() {
+        let prev = null;
+        let curr = this.head;
+        while(curr) {
+            let next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        this.head = prev;
+    }
+
     // Add Item in Start Linked list
     prepend(value) {
         let node = new Node(value);
-        if (!this.isEmpty()) {
+        if (this.isEmpty()) {
+            this.head = node;
+            this.tail = node;
+        }else {
             node.next = this.head;
+            this.head = node;
         }
-        this.head = node;
         this.size++;
     }
 
@@ -110,13 +128,42 @@ class Linkedlist {
         if (this.isEmpty()) {
             this.head = node;
         } else {
+            this.tail.next = node;
+        }
+        this.tail = node;
+        this.size++;
+    }
+
+    // Remove element in start linked list
+    removeFromFront() {
+        if(this.isEmpty()) {
+            return;
+        }
+        let value = this.head.value;
+        this.head = this.head.next;
+        this.size--;
+        return value;
+    }
+
+    // Remove element in end linked list
+    removeFromEnd() {
+        if(this.isEmpty()) {
+                return;
+        }
+        let value = this.tail.value;
+        if(this.size === 1) {
+            this.head = null;
+            this.tail = null
+        }else {
             let prev = this.head;
-            while (prev.next) {
+            while(prev.next !== this.tail) {
                 prev = prev.next;
             }
-            prev.next = node;
+            prev.next = null;
+            this.tail = prev;
         }
-        this.size++;
+        this.size--;
+        return value;
     }
 
     // Check Linkedlist Empty or not
@@ -146,17 +193,26 @@ class Linkedlist {
 }
 
 
-
-
-
+// Create linked list
 let linkedlist = new Linkedlist();
 
-linkedlist.append(10);
-linkedlist.append(20);
-linkedlist.append(30);
-linkedlist.append(40);
-linkedlist.insert(35, 3);
-linkedlist.removeValue(40);
-linkedlist.print();
+console.log(linkedlist.isEmpty()); // true
+console.log(linkedlist.getSize()); // 0
+// add items
+linkedlist.append(10); // 10 , 20 , 30 , 40
+linkedlist.append(20); // 10 , 20
+linkedlist.append(30); // 10 , 20 , 30
+linkedlist.append(40); // 10 , 20 , 30 , 40
+// insert value
+linkedlist.insert(35, 3); // 10 , 20 , 30 , 35 , 40
+linkedlist.removeValue(40); // 10 , 20 , 30 , 35
+linkedlist.print(); // 10 , 20 , 30 , 35
 
-console.log(linkedlist.searchValue(10));
+console.log(linkedlist.searchValue(10)); //  1
+
+console.log(linkedlist.isEmpty()); // false
+console.log(linkedlist.getSize()); // 4
+
+linkedlist.reverse(); // 35 , 30 , 20 , 10
+
+linkedlist.print(); // 35 , 30 , 20 , 10
