@@ -70,10 +70,11 @@ Considered as a linear data structure, or more abstractly a sequential collectio
 ### peek 
 
 ```text
-     if(!this.isEmpty()) {
+    peek() {
+        if(!this.isEmpty()) {
             return  this.items[this.items.length - 1];
-    }
-    return null
+        }
+        return null
     }
 ```
 

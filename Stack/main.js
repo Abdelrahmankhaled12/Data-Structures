@@ -46,7 +46,7 @@ stackVar.pop()  // 1 , 2
 stackVar.push(4);  // 1 , 2 , 4 
 stackVar.push(5);  // 1 , 2 , 4 , 5
 
-stackVar.print();  // 1 , 2 , 4 , 5
+stackVar.print();  // 5 , 4 , 2 , 1
 console.log(stackVar.isEmpty()) // False
 console.log(stackVar.peek()); // 5
 console.log(stackVar.size()); // 4

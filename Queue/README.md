@@ -1,5 +1,7 @@
 # Queue
 
+In computer science, a queue is a collection of entities that are maintained in a sequence and can be modified by the addition of entities at one end of the sequence and the removal of entities from the other end of the sequence. By convention, the end of the sequence at which elements are added is called the back, tail, or rear of the queue, and the end at which elements are removed is called the head or front of the queue, analogously to the words used when people line up to wait for goods or services.
+
 <ul>
     <li> The queue data structure is a sequential collection of elements that follows the principle of first in first out (FIFO). </li>
     <li> The first element inserted into the queue is first element to be removed. </li>
@@ -41,4 +43,73 @@
     <li> size() -> get the number of elements in the queue</li>
     <li> print() -> visualize the elements in the queue</li>
 </ul>
+
+
+
+### Enqueue 
+
+```text
+    Enqueue(item) {
+        this.items[this.rear++] = item;
+    }
+```
+
+### Dequeue 
+
+```text
+    Dequeue() {
+        if (!this.isEmpty()) {
+            const item = this.items[this.front];
+            delete this.items[this.front++];
+            return item;
+        }
+        return "Queue is Empty";
+    }
+```
+
+### isEmpty 
+
+```text
+    isEmpty() {
+        return this.rear === 0;
+    }
+```
+
+### peek 
+
+```text
+    peek() {
+        if (!this.isEmpty()) {
+            return this.items[this.front];
+        }
+        return "Queue is Empty";
+    }
+```
+
+### size 
+
+```text
+   size() {
+        return this.rear - this.front;
+    }
+```
+
+### push 
+
+```print
+    print() {
+        console.log(Object.values(this.items).toString());
+    }
+```
+
+
+
+*Queue Animation [Queue](https://www.cs.usfca.edu/~galles/visualization/QueueArray.html)*
+
+
+## References
+
+-   [Wikipedia](https://en.wikipedia.org/wiki/Queue_(abstract_data_type))
+-   [YouTube](https://youtube.com/playlist?list=PLC3y8-rFHvwg6nsAOfC5Is18KB2DrVOJy)
+-   [GeeksForGeeks](https://www.geeksforgeeks.org/implementation-queue-javascript/)
 
