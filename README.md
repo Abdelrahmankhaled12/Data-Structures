@@ -8,8 +8,8 @@ In computer science, a data structure is a data organization, management, and st
 
 
 - [Stack](https://github.com/Abdelrahmankhaled12/Data-Structures/tree/main/Stack)
--[Queue](https://github.com/Abdelrahmankhaled12/Data-Structures/tree/main/Queue)
--[Circular Queue](https://github.com/Abdelrahmankhaled12/Data-Structures/tree/main/Circular%20Queue)
--[Linked list](https://github.com/Abdelrahmankhaled12/Data-Structures/tree/main/Linked%20list)
--[Stack (Linked List Implementaion)](https://github.com/Abdelrahmankhaled12/Data-Structures/tree/main/Stack%20(Linked%20List%20Implementaion))
+- [Queue](https://github.com/Abdelrahmankhaled12/Data-Structures/tree/main/Queue)
+- [Circular Queue](https://github.com/Abdelrahmankhaled12/Data-Structures/tree/main/Circular%20Queue)
+- [Linked list](https://github.com/Abdelrahmankhaled12/Data-Structures/tree/main/Linked%20list)
+- [Stack (Linked List Implementaion)](https://github.com/Abdelrahmankhaled12/Data-Structures/tree/main/Stack%20(Linked%20List%20Implementaion))
 
