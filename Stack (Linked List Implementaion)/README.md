@@ -1,7 +1,7 @@
 # Stack (Linked List Implementaion)
 
 
-<img src="https://cdn.programiz.com/sites/tutorial2program/files/stack.png">
+<img src="https://www.codespeedy.com/wp-content/uploads/2020/08/stack-using-linkedlist-pic1.png">
 
 
 ## Stack Usage
@@ -105,6 +105,5 @@
 
 ## References
 
--   [Wikipedia](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
 -   [YouTube](https://youtube.com/playlist?list=PLC3y8-rFHvwg6nsAOfC5Is18KB2DrVOJy)
--   [GeeksForGeeks](https://www.geeksforgeeks.org/implementation-stack-javascript/)
+-   [GeeksForGeeks](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)
