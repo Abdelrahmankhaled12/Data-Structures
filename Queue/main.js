@@ -59,4 +59,4 @@ queue.Enqueue(60); // 20 , 30 , 40 , 50 , 60
 console.log(queue.peek()); // 20
 console.log(queue.size()); // 5
 console.log(queue.isEmpty()); // false
-queue.print(); // 10 , 20 , 30 , 40 , 60
+queue.print(); // 20 , 30 , 40 , 50 , 60
